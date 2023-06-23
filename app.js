@@ -15,19 +15,18 @@ $(function() {
 			header.removeClass("fixed");
 		};
 
-		
+	});	
 		// Smooth Scroll
-		$("[data-scroll]").on("click", function(event) {
-			event.preventDefault();
+	$("[data-scroll]").on("click", function(event) {
+		event.preventDefault();
 
-			let block_ID = $(this).data("scroll");
-			let block_Offset = $(block_ID).offset().top;
+		let block_ID = $(this).data("scroll");
+		let block_Offset = $(block_ID).offset().top;
 
-			$("html, body").animate({
-				scrollTop: block_Offset - 75
-			}, 1000);
+	$("html, body").animate({
+		scrollTop: block_Offset - 75
+	}, 550);
 		
-		});
-
 	});
+
 });

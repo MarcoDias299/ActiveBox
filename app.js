@@ -34,10 +34,9 @@ let nav_Toggle =$("#nav_toggle");
 	});
 
 // Burger-Menu
-$(nav_Toggle).on("click", function(event) {
+	$(nav_Toggle).on("click", function(event) {
 	event.preventDefault();
 	nav.toggleClass("show");
-
-});
+	});
 
 });
